@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Bottom Nav Bar Demo',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
@@ -21,6 +21,7 @@ class MyApp extends StatelessWidget {
   }
 }
 
+// Tracks the NavBar shown
 int selectedButton = 0;
 
 class MyHomePage extends StatefulWidget {
@@ -30,6 +31,7 @@ class MyHomePage extends StatefulWidget {
   State<MyHomePage> createState() => _MyHomePageState();
 }
 
+// Changes the navbar accordingly
 Widget bottomBarSelector() {
   if (selectedButton == 0) {
     return const ModernBar();

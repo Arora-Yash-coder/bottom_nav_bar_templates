@@ -17,7 +17,7 @@ class ModernBar extends StatelessWidget {
           tabBackgroundColor: Colors.grey.shade800,
           gap: 8,
           onTabChange: (index) {
-            // Navigate to selected Screen
+            // Handle the Navigation here
           },
           padding: const EdgeInsets.all(16),
           tabs: const [
